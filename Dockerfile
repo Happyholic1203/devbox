@@ -10,7 +10,6 @@ RUN apt-get update && \
 	git checkout -b vim origin/vim && \
 	chmod +x ./install.sh && \
 	./install.sh && \
-    echo "alias cls='clear'" >> ~/.bash_aliases && \
 	echo "#!/bin/bash" >> ~/init && \
 	echo "TERM=xterm-256color tmux" >> ~/init && \
 	echo "bash" >> ~/init && \
