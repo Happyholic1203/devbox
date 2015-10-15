@@ -5,11 +5,10 @@ RUN apt-get update && \
     apt-get install -y man vim tmux git curl wget python-pip python-dev \
         build-essential ipython ctags ack-grep && \
     pip install --upgrade pip && \
-	git clone https://github.com/Happyholic1203/dotfiles && \
+	git clone --single-branch https://github.com/Happyholic1203/dotfiles && \
 	cd dotfiles && \
-	git checkout -b vim origin/vim && \
 	chmod +x ./install.sh && \
-	./install.sh && \
+	./install.sh -n && \
 	echo "#!/bin/bash" >> ~/init && \
 	echo "TERM=xterm-256color tmux" >> ~/init && \
 	echo "bash" >> ~/init && \
