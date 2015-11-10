@@ -4,7 +4,7 @@ MAINTAINER Yu-Cheng (Henry) Huang
 RUN apt-get update && \
     apt-get install -y man vim tmux git curl wget python-pip python-dev \
         build-essential ipython ctags ack-grep && \
-    pip install --upgrade pip && \
+    pip install --upgrade pip pytest && \
 	git clone --single-branch https://github.com/Happyholic1203/dotfiles && \
 	cd dotfiles && \
 	chmod +x ./install.sh && \
