@@ -2,8 +2,8 @@ FROM ubuntu:14.04
 MAINTAINER Yu-Cheng (Henry) Huang
 
 RUN apt-get update && \
-    apt-get install -y man vim tmux git curl wget python-pip python-dev \
-        build-essential ipython ctags ack-grep && \
+    apt-get install -y man vim tmux git git-core bash-completion curl wget \
+    python-pip python-dev build-essential ipython ctags ack-grep && \
     pip install --upgrade pip pytest && \
 	git clone --single-branch https://github.com/Happyholic1203/dotfiles && \
 	cd dotfiles && \
