@@ -9,7 +9,7 @@ RUN apt-get update && \
 	git clone --single-branch https://github.com/Happyholic1203/dotfiles && \
 	cd dotfiles && \
 	chmod +x ./install.sh && \
-	./install.sh --with-ycm && \
+	./install.sh --with-ycm --with-ranger && \
 	echo "#!/bin/bash" >> ~/init && \
 	echo "TERM=xterm-256color tmux" >> ~/init && \
 	echo "bash" >> ~/init && \
